@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background: #076dd4f6;  
+    background: #3b3d3ff6;  
 }
 #main{
     width: 100%;
@@ -15,7 +15,7 @@ body{
     position: absolute;
     bottom: -100%;
     left: 30%;
-    animation: anim 2s forwards, anim2 3s forwards 3s;
+    animation: anim 4s forwards, anim2 3s forwards 3s;
 } 
 
 #box1::after{
@@ -41,14 +41,14 @@ body{
             width: 530px;
         }
         to{
-            left: 50%;
             width: 0px;
+            left: 50%;
         } 
 }
 #box2{
     width: auto;
     height: auto;
-    font-family: 'Behnschrift Condensed';
+    font-family: 'Bahnschrift Condensed';
     color: rgb(223, 199, 199);
     font-size: 10em;
     font-weight: 500;
@@ -58,19 +58,38 @@ body{
     left: 100px;
     overflow: hidden;
 } 
-#text{
+#text1{
     position: relative;
     left: 100px;
     animation: anim3 2s forwards 3s;
+    opacity: 0;
+}
+#text2{
+    position:relative;
+    right: 100px;
+    animation: anim5 2s forwards 3s;
+    opacity: 0;
 }
 @keyframes anim3{
         from{
             left: -100%;
+            opacity: 1;
         }
         to{
             left: 0%;
+            opacity: 1;
         } 
     }
+@keyframes anim5{
+        from{
+            right: -100%;
+            opacity: 1;
+        }
+        to{
+            right: 0%;
+            opacity: 1;
+        } 
+    }    
 #box3{
     overflow: hidden;
 } 
@@ -86,10 +105,10 @@ body{
     margin-top: 20px;
 }
 #logo img{
-    width: 50px;
+    width: 80px;
 }
 #menu {
-    font-family: 'Behnschrift Condensed';
+    font-family: 'Bahnschrift Condensed';
     font-size: 14px;
     color: rgb(219, 202, 202);
     letter-spacing: 2px;
